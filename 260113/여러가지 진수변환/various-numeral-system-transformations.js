@@ -5,13 +5,13 @@ let [n, b] = input[0].split(' ').map(Number);
 let digits = [];
 
 while (true) {
-    if (n < 4) {
+    if (n < b) {
         digits.push(n);
         break;
     }
 
-    digits.push(n % 4);
-    n = Math.floor(n / 4);
+    digits.push(n % b);
+    n = Math.floor(n / b);
 }
 
 let binaryNumber = '';
@@ -20,4 +20,3 @@ for (let i = digits.length - 1; i >= 0; i--) {
 }
 
 console.log(binaryNumber);
-
