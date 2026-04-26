@@ -1,9 +1,9 @@
 let num = 26;
 const result = [];
 
-while (num = 10) {
+while (num >= 10) {
+    result.push(num);
     num -= 1;
-    result.push(i);
 }
 
 console.log(result.join(" "));
